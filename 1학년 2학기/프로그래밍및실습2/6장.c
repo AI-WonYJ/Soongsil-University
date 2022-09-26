@@ -3,43 +3,43 @@
 
 int main(void)
 {
-	/*int n;
+	int n;
 	scanf("%d", &n);
 	if (n >= 100)
 		printf("large");
 	else
-		printf("small");*/
+		printf("small");
 
 
 
-	/*int score;
+	int score;
 	scanf("%d", &score);
 	if (score >= 90)
-		printf("ÇÕ°İ: ÇĞÁ¡A");
+		printf("í•©ê²©: í•™ì A");
 	else if (score >= 80)
-		printf("ÇÕ°İ: ÇĞÁ¡B");
+		printf("í•©ê²©: í•™ì B");
 	else if (score >= 70)
-		printf("ÇÕ°İ: ÇĞÁ¡C");
+		printf("í•©ê²©: í•™ì C");
 	else if (score >= 60)
-		printf("ÇÕ°İ: ÇĞÁ¡D");
+		printf("í•©ê²©: í•™ì D");
 	else
-		printf("ºÒÇÕ°İ ÇĞÁ¡F\n");*/
+		printf("ë¶ˆí•©ê²© í•™ì F\n");
 
 
 
-	/*LAB ¿¬½À
-	* '½Ç±â Á¡¼ö'¿Í '¸éÁ¢ Á¡¼ö'¸¦ ÀÔ·Â¹Ş¾Æ ¸ğµÎ 80ÀÌ»óÀÌ¸é 'ÇÕ°İ' ±×·¸Áö ¾ÊÀ¸¸é 'ºÒÇÕ°İ' Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥
+	LAB ì—°ìŠµ
+	/* 'ì‹¤ê¸° ì ìˆ˜'ì™€ 'ë©´ì ‘ ì ìˆ˜'ë¥¼ ì…ë ¥ë°›ì•„ ëª¨ë‘ 80ì´ìƒì´ë©´ 'í•©ê²©' ê·¸ë ‡ì§€ ì•Šìœ¼ë©´ 'ë¶ˆí•©ê²©' ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨*/
 	int p_score, w_score;
 	scanf("%d %d", &p_score, &w_score);
 	if (p_score >= 80 && w_score >= 80)
-		printf("ÇÕ°İ");
+		printf("í•©ê²©");
 	else
-		printf("ºÒÇÕ°İ");*/
+		printf("ë¶ˆí•©ê²©");
 
 
 
-	/*int n;
-	printf("ÄÅÀÇ »çÀÌÁî¸¦ ÀÔ·ÁÇÏ¼¼¿ä(´ÜÀ§ ml): ");
+	int n;
+	printf("ì»µì˜ ì‚¬ì´ì¦ˆë¥¼ ì…ë ¤í•˜ì„¸ìš”(ë‹¨ìœ„ ml): ");
 	scanf("%d", &n);
 	if (n < 100) {
 		printf("small");
@@ -49,15 +49,15 @@ int main(void)
 	}
 	else {
 		printf("large");
-	}*/
+	}
 
 
 
-	/*char op;
+	char op;
 	int x, y, result;
 
-	printf("¼ö½ÄÀ» ÀÔ·ÂÇÏ½Ã¿À");
-	printf("(¿¹: 2 + 5)");
+	printf("ìˆ˜ì‹ì„ ì…ë ¥í•˜ì‹œì˜¤");
+	printf("(ì˜ˆ: 2 + 5)");
 	printf(">>");
 
 	scanf("%d %c %d", &x, &op, &y);
@@ -73,38 +73,38 @@ int main(void)
 	else
 		printf("error");
 	printf("%d %c %d = %d", x, op, y, result);
-	return 0;*/
+	return 0;
 
 
 
-	/*int score;
-	printf("Á¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ");
+	int score;
+	printf("ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”: ");
 	scanf("%d", &score);
 	switch (score / 10) {
 	case 10:
 	case 9:
-		printf("AÇĞÁ¡ÀÔ´Ï´Ù.\n");
+		printf("Aí•™ì ì…ë‹ˆë‹¤.\n");
 		break;
 	case 8:
-		printf("BÇĞÁ¡ÀÔ´Ï´Ù.\n");
+		printf("Bí•™ì ì…ë‹ˆë‹¤.\n");
 		break;
 	case 7:
-		printf("CÇĞÁ¡ÀÔ´Ï´Ù.\n");
+		printf("Cí•™ì ì…ë‹ˆë‹¤.\n");
 		break;
 	case 6:
-		printf("DÇĞÁ¡ÀÔ´Ï´Ù.\n");
+		printf("Dí•™ì ì…ë‹ˆë‹¤.\n");
 		break;
 	default:
-		printf("FÇĞÁ¡ÀÔ´Ï´Ù.\n");
-	}*/
+		printf("Fí•™ì ì…ë‹ˆë‹¤.\n");
+	}
 
 
 
-	/*char op;
+	char op;
 	int x, y, result;
 
-	printf("¼ö½ÄÀ» ÀÔ·ÂÇÏ½Ã¿À");
-	printf("(¿¹: 2 + 5)");
+	printf("ìˆ˜ì‹ì„ ì…ë ¥í•˜ì‹œì˜¤");
+	printf("(ì˜ˆ: 2 + 5)");
 	printf(">>");
 
 	scanf("%d %c %d", &x, &op, &y);
@@ -130,5 +130,5 @@ int main(void)
 		break;
 	}
 	printf("%d %c %d = %d", x, op, y, result);
-	return 0;*/
+	return 0;
 }
