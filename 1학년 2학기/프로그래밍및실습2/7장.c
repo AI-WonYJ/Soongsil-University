@@ -3,35 +3,35 @@
 
 int main(void)
 {
-	/*int n;
+	int n;
 	int i = 1;
-	printf("Ãâ·ÂÇÏ°í ½ÍÀº ´Ü: ");
+	printf("ì¶œë ¥í•˜ê³  ì‹¶ì€ ë‹¨: ");
 	scanf("%d", &n);
 	while (i <= 9) {
 		printf("%d*%d = %d\n", n, i, n * i);
 		i++;
 	}
-	return 0;*/
+	return 0;
 
 
 
-	/*char life = 1;
+	char life = 1;
 	int Method = 0;
 	while (life == 1) {
 		scanf("%d", &Method);
 		if (Method == 0) {
-			printf("µÇ´Â°É·Î ÇÏÀÚ.\n");
+			printf("ë˜ëŠ”ê±¸ë¡œ í•˜ì.\n");
 		}
 		else {
-			printf("¼ö°íÇß´Ù. ´ÙÀ½°Å ÇÏÀÚ.\n");
+			printf("ìˆ˜ê³ í–ˆë‹¤. ë‹¤ìŒê±° í•˜ì.\n");
 		}
 	}
-	return 0;*/
+	return 0;
 
 
-	/*int i, n, sum;
+	int i, n, sum;
 
-	printf("Á¤¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À: ");
+	printf("ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤: ");
 	scanf("%d", &n);
 
 	i = 1;
@@ -41,14 +41,14 @@ int main(void)
 		sum += i;
 		i++;
 	}
-	printf("1ºÎÅÍ %d±îÁöÀÇ ÇÕÀº %dÀÔ´Ï´Ù\n", n, sum);
-	return 0;*/
+	printf("1ë¶€í„° %dê¹Œì§€ì˜ í•©ì€ %dì…ë‹ˆë‹¤\n", n, sum);
+	return 0;
 
-	/*int n = 1;
+	int n = 1;
 	double money = 0.5;
 	while (n <= 30) {
 		money *= 2;
-		printf("%dÀÏ³¯ ÇöÀç ±İ¾× = %lf¿ø\n", n, money);
+		printf("%dì¼ë‚  í˜„ì¬ ê¸ˆì•¡ = %lfì›\n", n, money);
 		n++;
-	}*/
+	}
 }
