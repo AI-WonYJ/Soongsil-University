@@ -236,3 +236,40 @@ int main(void) {
 		printf("틀렸습니다...\n");
 	}
 }*/
+
+
+
+int main(void) {
+	int cor = 0;
+	int wro = 0;
+	while(1) {
+		int choice = 0;
+		char cgo = "";
+		int a = 0;
+		srand(time(NULL));
+		a = rand() % 2;
+		printf("동전 앞 / 뒷면을 선택해주세요 (1 또는 0 입력): ");
+		scanf("%d", &choice);
+		if (a == choice) {
+			printf("맞았습니다!\n");
+			cor++;
+		}
+
+		else {
+			printf("틀렸습니다...\n");
+			wro++;
+		}
+
+		printf("계속 하시겠습니까? (y / n): ");
+		scanf("%c1", &cgo);
+		if (cgo == 'y') {
+			continue;
+		}
+		else {
+			printf("맞춘 수: %d  틀린 수: %d\n", cor, wro);
+			break;
+		}
+	}
+
+	return 0;
+}
