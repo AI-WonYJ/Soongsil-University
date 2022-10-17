@@ -200,3 +200,20 @@ int main(void) {
 	_getch();
 	return 0;
 }*/
+
+
+
+/*int main(void) {
+	double distance, height, degree, radian;
+	double tree_height = 0;
+	printf("나무와의 길이(단위는 미터): ");
+	scanf("%lf", &distance);
+	printf("측정자의 키(단위는 미터): ");
+	scanf("%lf", &height);
+	printf("각도(단위는 도): ");
+	scanf("%lf", &degree);
+	radian = degree * 3.141592653589793238462643383279502884197169399375105820974944592307816406286208998628634825342117067932823066470938446095 / 180;
+	tree_height = height + (tan(radian) * distance);
+
+	printf("나무의 높이(단위는 미터): %lf", tree_height);
+}*/
