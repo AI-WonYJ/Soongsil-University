@@ -216,4 +216,6 @@ int main(void) {
 	tree_height = height + (tan(radian) * distance);
 
 	printf("나무의 높이(단위는 미터): %lf", tree_height);
+	
+	return 0;
 }*/
