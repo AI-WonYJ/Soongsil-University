@@ -219,3 +219,20 @@ int main(void) {
 	
 	return 0;
 }*/
+
+
+
+/*int main(void) {
+	int choice;
+	int a = 0;
+	srand(time(NULL));
+	a = rand() % 2;
+	printf("동전 앞 / 뒷면을 선택해주세요 (1 또는 0 입력): ");
+	scanf("%d", &choice);
+	if (a == choice) {
+		printf("맞았습니다!\n");
+	}
+	else if (a != choice) {
+		printf("틀렸습니다...\n");
+	}
+}*/
