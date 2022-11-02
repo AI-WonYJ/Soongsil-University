@@ -103,3 +103,31 @@ int main(void) {
 //	printf("최소값은 %d입니다.", maximum);
 //	return 0;
 //}
+
+
+
+//#define SIZE 10
+//
+//int main(void) {
+//	int list[SIZE] = { 3, 2, 9, 7, 1, 4, 8, 0, 6, 5 };
+//	int i, j, temp, least;
+//	int count = 0;
+//
+//	for (i = 0; i < SIZE - 1; i++) {
+//		least = i;
+//		for (j = i + 1; j < SIZE; j++) {
+//			count++;
+//			if (list[j] < list[least]) {
+//				least = j;
+//			}
+//		}
+//		temp = list[i];
+//		list[i] = list[least];
+//		list[least] = temp;
+//	}
+//	for (i = 0; i < SIZE; i++) {
+//		printf("%d ", list[i]);
+//	}
+//	printf("\n%d",count);
+//		return 0;
+//}
