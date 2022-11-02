@@ -19,40 +19,40 @@ int main(void) {
 
 
 
-/*# define SEATS 10                //수정 필요
-
-int main(void) {
-	int seat;
-	int seats[SEATS] = { 0 };
-	char check;
-	while (1) {
-		printf("좌석을 예약하시겠습니까?(y 또는 n): ");
-		scanf("%c", &check);
-		if (check == 'y' || check == 'Y') {
-			printf("------------------------------\n");
-			printf("1 2 3 4 5 6 7 8 9 10\n");
-			printf("------------------------------\n");
-			for (int i = 0; i < SEATS; i++) {
-				printf("%d ", seats[i]);
-			}
-			printf("\n");
-			printf("몇번째 좌석을 예약하시겠습니까?: ");
-			scanf("%d", &seat);
-			if (seats[seat - 1] == 0) {
-				seats[seat - 1] == 1;
-				printf("예약되었습니다.\n");
-			}
-			else {
-				printf("이미 예약된 자리입니다.\n");
-			}
-
-		}
-		if (check == 'n' || check == 'N') {
-			printf("예약이 종료되었습니다\n");
-			break;
-		}
-	}
-}*/
+//# define SEATS 10
+//
+//int main(void) {
+//	int seats[SEATS] = { 0 };
+//	char check;
+//	int seat;
+//	while (1) {
+//		printf("좌석을 예약하시겠습니까?(y 또는 n): ");
+//		scanf(" %c", &check);
+//		if (check == 'y' || check == 'Y') {
+//			printf("------------------------------\n");
+//			printf("1 2 3 4 5 6 7 8 9 10\n");
+//			printf("------------------------------\n");
+//			for (int i = 0; i < SEATS; i++) {
+//				printf("%d ", seats[i]);
+//			}
+//			printf("\n몇번째 좌석을 예약하시겠습니까?: ");
+//			scanf("%d", &seat);
+//			if (seats[seat - 1] == 0) {
+//				seats[seat - 1] = 1;
+//				printf("예약되었습니다.\n");
+//			}
+//			else {
+//				printf("이미 예약된 자리입니다.\n");
+//			}
+//
+//		}
+//		else if (check == 'n' || check == 'N') {
+//			printf("예약이 종료되었습니다\n");
+//			break;
+//		}
+//	}
+//	return 0;
+//}
 
 
 
