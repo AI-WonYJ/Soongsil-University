@@ -113,3 +113,38 @@
 //	printf("중간 센서와 장애물과의 거리: %lf\n", sensorData[1]);
 //	printf("오른쪽 센서와 장애물과의 거리: %lf\n", sensorData[2]);
 //}
+
+
+
+//#define SIZE 10
+//void convert(double* grades, double* scores, int size) {
+//	int i;
+//	for (i = 0; i < size; i++) {
+//		scores[i] = (grades[i] / 4.5) * 100.0;
+//	}
+//}
+//
+//void main() {
+//	double grade[SIZE];
+//	double score[SIZE];
+//
+//	float s = 0.0;
+//
+//	for (int j = 0; j < SIZE; j++) {
+//		grade[j] = s;
+//		s += 0.5;
+//	}
+//
+//	convert(grade, score, SIZE);
+//
+//	for (int j = 0; j < SIZE; j++) {
+//		printf("%05.2lf, ", grade[j]);
+//	}
+//	printf("\n");
+//	for (int j = 0; j < SIZE; j++) {
+//		printf("%05.2lf, ", score[j]);
+//	}
+//
+//	return 0;
+//}
+////scores = 100 * grade / 4.5
