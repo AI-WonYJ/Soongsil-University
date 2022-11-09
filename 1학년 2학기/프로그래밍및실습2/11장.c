@@ -41,3 +41,20 @@
 //	printf("*p = %d\n", *p);// 포인터를 통한 간접 참조 값 출력
 //	return 0;
 //}
+
+
+
+//int main(void) {
+//	int i = 10;
+//	int *pi = &i;
+//
+//	printf("i = &d, pi = %p\n", i, pi);
+//	(*pi)++;
+//	printf("i = &d, pi = %p\n", i, pi);
+//
+//	printf("i = &d, pi = %p\n", i, pi);
+//	*pi++;
+//	printf("i = &d, pi = %p\n", i, pi);
+//
+//	return 0;
+//}
