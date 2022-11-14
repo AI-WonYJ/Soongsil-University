@@ -37,3 +37,25 @@
 //
 //	return 0;
 //}
+
+
+
+//int main(void) {
+//	char s;
+//	printf("문자를 입력하시오: ");
+//	scanf("%c", &s);
+//	printf("아스키 코드값=%d", s);
+//}
+
+
+
+//int main(void) {
+//	char name[100];
+//	char address[100];
+//	printf("이름을 입력하시오: ");
+//	gets_s(name, 100);
+//	printf("현재 거주하는 주소를 입력하시오: ");
+//	gets_s(address, 100);
+//	puts(name);
+//	puts(address);
+//	return 0;
