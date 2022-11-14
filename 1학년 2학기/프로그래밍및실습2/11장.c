@@ -148,3 +148,26 @@
 //	return 0;
 //}
 ////scores = 100 * grade / 4.5
+
+
+
+//#define SIZE 4
+//
+//int serach(int *A, int size, int search_value) {
+//	int i;
+//	for (i = 0; i < size; i++) {
+//		if (A[i] == search_value) {
+//			return i;
+//			break;
+//		}
+//		else {
+//			continue;
+//		}
+//	}
+//	return -1;
+//}
+//
+//void main() {
+//	int A[SIZE] = { 150, 200, 600, 900 };
+//	printf("인덱스 번호: %d", serach(A, SIZE, 200));
+//}
