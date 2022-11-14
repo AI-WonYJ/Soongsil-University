@@ -21,3 +21,19 @@
 //	printf("문자열\"%s\"의 길이는 %d입니다.\n", str, i);
 //	return 0;
 //}
+
+
+
+
+//int main(void) {
+//	char* p = "HelloWorld";
+//	printf("%s \n", p);
+//
+//	p = "Welcome to C world!";
+//	printf("%s \n", p);
+//
+//	p = "Goodbye";
+//	printf("%s \n", p);
+//
+//	return 0;
+//}
