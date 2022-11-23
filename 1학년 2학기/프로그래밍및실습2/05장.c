@@ -3,69 +3,67 @@
 
 void main()
 {
-	int price, money, change, each;
-	printf("ë¬¼ê±´ ê°’ì„ ì…ë ¥í•˜ì‹œì˜¤: ");
+	/*int price, money, change, each;
+	printf("¹°°Ç °ªÀ» ÀÔ·ÂÇÏ½Ã¿À: ");
 	scanf("%d", &price);
-	printf("ì‚¬ìš©ìê°€ ë‚¸ ëˆ: ");
+	printf("»ç¿ëÀÚ°¡ ³½ µ·: ");
 	scanf("%d", &money);
 	change = money - price;
 	each = change / 5000;
 	change = change % 5000;
-	printf("ì˜¤ì²œì›ê¶Œ: %dì¥\n", each);
+	printf("¿ÀÃµ¿ø±Ç: %dÀå\n", each);
 	each = change / 1000;
 	change = change % 1000;
-	printf("ì²œì›ê¶Œ: %dì¥\n", each);
+	printf("Ãµ¿ø±Ç: %dÀå\n", each);
 	each = change / 500;
 	change = change % 500;
-	printf("ì˜¤ë°±ì› ë™ì „: %dê°œ\n", each);
+	printf("¿À¹é¿ø µ¿Àü: %d°³\n", each);
 	each = change / 100;
 	change = change % 100;
-	printf("ë°±ì› ë™ì „: %dê°œ\n", each);
+	printf("¹é¿ø µ¿Àü: %d°³\n", each);*/
 
-	
-	
-	int year, result;
-	printf("ì—°ë„ë¥¼ ì…ë ¥í•˜ì‹œì˜¤: ");
+	/*int year, result;
+	printf("¿¬µµ¸¦ ÀÔ·ÂÇÏ½Ã¿À: ");
 	scanf("%d", &year);
 	result = ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0));
-	printf("result = %d\n", result);
+	printf("result = %d\n", result);*/
 
 
 
-	LAB ì—°ìŠµ
-	Cì–¸ì–´ ì ìˆ˜ ì…ë ¥ë°›ì•„ì„œ 70ì´ìƒì´ë©´ "pass" ê·¸ë ‡ì§€ ì•Šìœ¼ë©´ "no pass"ë¼ê³  ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨
+	/*LAB ¿¬½À
+	C¾ğ¾î Á¡¼ö ÀÔ·Â¹Ş¾Æ¼­ 70ÀÌ»óÀÌ¸é "pass" ±×·¸Áö ¾ÊÀ¸¸é "no pass"¶ó°í Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥
 	int c_score;
 	scanf("%d", &c_score);
 	(c_score >= 70) ? printf("pass") : printf("no pass");
 
 
 
-	char data = 'a';
+	/*char data = 'a';
 	char key = 0xff;
 
 	char encrpted_data;
 	encrpted_data = data ^ key;
 
-	printf("ì•”í˜¸í™”ëœ ë¬¸ì = %c\n", encrpted_data);
+	printf("¾ÏÈ£È­µÈ ¹®ÀÚ = %c\n", encrpted_data);
 
 	char orig_data;
 	orig_data = encrpted_data ^ key;
-	printf("ì›ë˜ì˜ ë°ì´í„° = %c\n", orig_data);
-	printf("ì›ë˜ì˜ ë°ì´í„° = %d\n", orig_data);
+	printf("¿ø·¡ÀÇ µ¥ÀÌÅÍ = %c\n", orig_data);
+	printf("¿ø·¡ÀÇ µ¥ÀÌÅÍ = %d\n", orig_data);*/
 
 
-	char c;
+	/*char c;
 	int i;
 	float f;
 
-	c = 65;  // ë‚´ë¦¼ ë³€í™˜
-	i = 1.23456 + 10;  // ë‚´ë¦¼ ë³€í™˜
-	f = 10 + 20;  // ì˜¬ë¦¼ ë³€í™˜
-	printf("c = %d, i = %d, f = %f\n", c, i, f);
+	c = 65;  // ³»¸² º¯È¯
+	i = 1.23456 + 10;  // ³»¸² º¯È¯
+	f = 10 + 20;  // ¿Ã¸² º¯È¯
+	printf("c = %d, i = %d, f = %f\n", c, i, f);*/
 
 
 
-	int i;
+	/*int i;
 	double f;
 
 	f = 5 / 4;
@@ -73,13 +71,12 @@ void main()
 	f = (double)5 / 4;
 	printf("%f\n", f);
 	f = 5.0 / 4;
-	printf("%f\n", f);
+	printf("%f\n", f);*/
 
 
-	
-	double f_tmp, c_tmp;
-	printf("ì„­ì”¨ ì˜¨ë„ë¡œ ë°”ê¿€ í™”ì”¨ ì˜¨ë„ë¥¼ ì…ë ¥í•˜ì„¸ìš”: ");
+	/*double f_tmp, c_tmp;
+	printf("¼·¾¾ ¿Âµµ·Î ¹Ù²Ü È­¾¾ ¿Âµµ¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ");
 	scanf("%lf", &f_tmp);
 	c_tmp = (double)5 / (double)9 * (f_tmp - 32);
-	printf("ì„­ì”¨ %lfë„ ì…ë‹ˆë‹¤.", c_tmp);
+	printf("¼·¾¾ %lfµµ ÀÔ´Ï´Ù.", c_tmp);*/
 }

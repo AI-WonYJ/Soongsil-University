@@ -4,6 +4,7 @@
 #include <time.h>
 #include <Windows.h>
 #include <conio.h>
+#include <math.h>
 
 /*int max(int x, int y) {
 	if (x > y)
@@ -14,14 +15,14 @@
 
 int main(void) {
 	int x, y;
-	printf("ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤: ");
+	printf("Á¤¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À: ");
 	scanf("%d", &x);
-	printf("ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤: ");
+	printf("Á¤¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À: ");
 	scanf("%d", &y);
 
 	int larger;
 	larger = max(x, y);
-	printf("ë” í°ê°’ì€ %dì…ë‹ˆë‹¤.\n", larger);
+	printf("´õ Å«°ªÀº %dÀÔ´Ï´Ù.\n", larger);
 	return 0;
 }*/
 
@@ -29,7 +30,7 @@ int main(void) {
 
 /*int get_integer() {
 	int value;
-	printf("ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤: ");
+	printf("Á¤¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À: ");
 	scanf("%d", &value);
 	return value;
 }
@@ -42,7 +43,7 @@ int main(void) {
 	int y = get_integer();
 
 	int sum = add(x, y);
-	printf("ë‘ ìˆ˜ì˜ í•©ì€ %dì…ë‹ˆë‹¤.\n", sum);
+	printf("µÎ ¼öÀÇ ÇÕÀº %dÀÔ´Ï´Ù.\n", sum);
 	return 0;
 }*/
 
@@ -58,9 +59,9 @@ int main(void) {
 
 int main(void) {
 	int n;
-	printf("ì•Œê³  ì‹¶ì€ íŒ©í† ë¦¬ì–¼ì˜ ê°’ì€?");
+	printf("¾Ë°í ½ÍÀº ÆÑÅä¸®¾óÀÇ °ªÀº?");
 	scanf("%d", &n);
-	printf("%d!ì˜ ê°’ì€ %dì…ë‹ˆë‹¤. \n", n, factorial(n));
+	printf("%d!ÀÇ °ªÀº %dÀÔ´Ï´Ù. \n", n, factorial(n));
 	return 0;
 }*/
 
@@ -68,9 +69,9 @@ int main(void) {
 
 /*void printOptions()
 {
-	printf(" 'c' ì„­ì”¨ì˜¨ë„ì—ì„œ í™”ì”¨ì˜¨ë„ë¡œ ë³€í™˜\n");
-	printf(" 'f' í™”ì”¨ì˜¨ë„ì—ì„œ ì„­ì”¨ì˜¨ë„ë¡œ ë³€í™˜\n");
-	printf(" 'q' ì¢…ë£Œ\n");
+	printf(" 'c' ¼·¾¾¿Âµµ¿¡¼­ È­¾¾¿Âµµ·Î º¯È¯\n");
+	printf(" 'f' È­¾¾¿Âµµ¿¡¼­ ¼·¾¾¿Âµµ·Î º¯È¯\n");
+	printf(" 'q' Á¾·á\n");
 }
 double C2F(double c_temp)
 {
@@ -87,20 +88,20 @@ int main(void)
 	double temp;
 	while (1) {
 		printOptions();
-		printf("ë©”ë‰´ì—ì„œ ì„ íƒí•˜ì„¸ìš”.");
+		printf("¸Ş´º¿¡¼­ ¼±ÅÃÇÏ¼¼¿ä.");
 		choice = getchar();
 		if (choice == 'q') break;
 		else if (choice == 'c') {
-			printf("ì„­ì”¨ì˜¨ë„: ");
+			printf("¼·¾¾¿Âµµ: ");
 			scanf("%lf", &temp);
-			printf("í™”ì”¨ì˜¨ë„: %lf \n", C2F(temp));
+			printf("È­¾¾¿Âµµ: %lf \n", C2F(temp));
 		}
 		else if (choice == 'f') {
-			printf("í™”ì”¨ì˜¨ë„: ");
+			printf("È­¾¾¿Âµµ: ");
 			scanf("%lf", &temp);
-			printf("ì„­ì”¨ì˜¨ë„: %lf \n", F2C(temp));
+			printf("¼·¾¾¿Âµµ: %lf \n", F2C(temp));
 		}
-		getchar();// ì—”í„°í‚¤ ë¬¸ìë¥¼ ì‚­ì œí•˜ê¸° ìœ„í•˜ì—¬ í•„ìš”!
+		getchar();// ¿£ÅÍÅ° ¹®ÀÚ¸¦ »èÁ¦ÇÏ±â À§ÇÏ¿© ÇÊ¿ä!
 	}
 	return 0;
 }*/
@@ -123,8 +124,8 @@ int main(void) {
 			tails++;
 		}
 	}
-	printf("ë™ì „ì˜ ì•ë©´: %d\n", heads);
-	printf("ë™ì „ì˜ ë’·ë©´: %d\n", tails);
+	printf("µ¿ÀüÀÇ ¾Õ¸é: %d\n", heads);
+	printf("µ¿ÀüÀÇ µŞ¸é: %d\n", tails);
 }
 
 int check(void) {
@@ -206,40 +207,23 @@ int main(void) {
 /*int main(void) {
 	double distance, height, degree, radian;
 	double tree_height = 0;
-	printf("ë‚˜ë¬´ì™€ì˜ ê¸¸ì´(ë‹¨ìœ„ëŠ” ë¯¸í„°): ");
+	printf("³ª¹«¿ÍÀÇ ±æÀÌ(´ÜÀ§´Â ¹ÌÅÍ): ");
 	scanf("%lf", &distance);
-	printf("ì¸¡ì •ìì˜ í‚¤(ë‹¨ìœ„ëŠ” ë¯¸í„°): ");
+	printf("ÃøÁ¤ÀÚÀÇ Å°(´ÜÀ§´Â ¹ÌÅÍ): ");
 	scanf("%lf", &height);
-	printf("ê°ë„(ë‹¨ìœ„ëŠ” ë„): ");
+	printf("°¢µµ(´ÜÀ§´Â µµ): ");
 	scanf("%lf", &degree);
 	radian = degree * 3.141592653589793238462643383279502884197169399375105820974944592307816406286208998628634825342117067932823066470938446095 / 180;
 	tree_height = height + (tan(radian) * distance);
 
-	printf("ë‚˜ë¬´ì˜ ë†’ì´(ë‹¨ìœ„ëŠ” ë¯¸í„°): %lf", tree_height);
-	
+	printf("³ª¹«ÀÇ ³ôÀÌ(´ÜÀ§´Â ¹ÌÅÍ): %lf", tree_height);	
+
 	return 0;
 }*/
 
 
 
 /*int main(void) {
-	int choice;
-	int a = 0;
-	srand(time(NULL));
-	a = rand() % 2;
-	printf("ë™ì „ ì• / ë’·ë©´ì„ ì„ íƒí•´ì£¼ì„¸ìš” (1 ë˜ëŠ” 0 ì…ë ¥): ");
-	scanf("%d", &choice);
-	if (a == choice) {
-		printf("ë§ì•˜ìŠµë‹ˆë‹¤!\n");
-	}
-	else if (a != choice) {
-		printf("í‹€ë ¸ìŠµë‹ˆë‹¤...\n");
-	}
-}*/
-
-
-
-int main(void) {
 	int cor = 0;
 	int wro = 0;
 	while(1) {
@@ -248,28 +232,49 @@ int main(void) {
 		int a = 0;
 		srand(time(NULL));
 		a = rand() % 2;
-		printf("ë™ì „ ì• / ë’·ë©´ì„ ì„ íƒí•´ì£¼ì„¸ìš” (1 ë˜ëŠ” 0 ì…ë ¥): ");
+		printf("µ¿Àü ¾Õ / µŞ¸éÀ» ¼±ÅÃÇØÁÖ¼¼¿ä (1 ¶Ç´Â 0 ÀÔ·Â): ");
 		scanf("%d", &choice);
 		if (a == choice) {
-			printf("ë§ì•˜ìŠµë‹ˆë‹¤!\n");
+			printf("¸Â¾Ò½À´Ï´Ù!\n");
 			cor++;
 		}
 
 		else {
-			printf("í‹€ë ¸ìŠµë‹ˆë‹¤...\n");
+			printf("Æ²·È½À´Ï´Ù...\n");
 			wro++;
 		}
 
-		printf("ê³„ì† í•˜ì‹œê² ìŠµë‹ˆê¹Œ? (y / n): ");
+		printf("°è¼Ó ÇÏ½Ã°Ú½À´Ï±î? (y / n): ");
 		scanf("%c1", &cgo);
 		if (cgo == 'y') {
 			continue;
 		}
 		else {
-			printf("ë§ì¶˜ ìˆ˜: %d  í‹€ë¦° ìˆ˜: %d\n", cor, wro);
+			printf("¸ÂÃá ¼ö: %d  Æ²¸° ¼ö: %d\n", cor, wro);
 			break;
 		}
 	}
 
 	return 0;
+}*/
+
+
+
+/*void AskBiman(int height, int weight) {             ´Ù½Ã ÇØ º¼°Í
+
 }
+
+int main(void) {
+	for (int a= 1; a <= 5; a++) {
+		int weight = 0;
+		int height = 0;
+		double BMI = 0;
+		printf("%d¹ø »ç¶÷ÀÇ Å°¸¦ ÀÔ·ÂÇÏ½Ã¿À (´ÜÀ§ cm): ", a);
+		scanf("%d", &height);
+		printf("%d¹ø »ç¶÷ÀÇ Å°¸¦ ÀÔ·ÂÇÏ½Ã¿À (´ÜÀ§ kg): ", a);
+		scanf("%d", &weight);
+		double heigh = height;
+		BMI = weight / (heigh * heigh);
+		printf("lf", BMI);
+	}
+}*/

@@ -4,79 +4,83 @@
 
 int main(void)
 {
-	int x = 20, y = 10;
+	/*int x = 20, y = 10;
 	int sum;
 	sum = x + y;
-	printf("ë‘ ìˆ˜ì˜ í•©: %d", sum);
-	return 0;
+	printf("µÎ ¼öÀÇ ÇÕ: %d", sum);
+	return 0;*/
 
 
 
-	double i;
-	printf("ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤: ");
+	/*double i;
+	printf("Á¤¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À: ");
 	scanf("%lf", &i);
-	return;
+	return;*/
 
 
 
-	int x;
+	/*int x;
 	int y;
 	int sum;
 
-	printf("ì²« ë²ˆì§¸ ìˆ«ìë¥¼ ì…ë ¥í•˜ì‹œì˜¤: ");
+	printf("Ã¹ ¹øÂ° ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ½Ã¿À: ");
 	scanf("%d", &x);
 
-	printf("ë‘ ë²ˆì§¸ ìˆ«ìë¥¼ ì…ë ¥í•˜ì‹œì˜¤: ");
+	printf("µÎ ¹øÂ° ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ½Ã¿À: ");
 	scanf("%d", &y);
 
 	sum = x + y;
-	printf("ë‘ ìˆ˜ì˜ í•©: %d", sum);
+	printf("µÎ ¼öÀÇ ÇÕ: %d", sum);
 	
-	return 0;
+	return 0;*/
 
 
 
-	int y_salary, m_salary;
-	printf("ì—°ë´‰ì„ ì…ë ¥í•˜ì‹œì˜¤(ë‹¨ìœ„: ë§Œì›): ");
+	/*int y_salary, m_salary;
+	printf("¿¬ºÀÀ» ÀÔ·ÂÇÏ½Ã¿À(´ÜÀ§: ¸¸¿ø): ");
 	scanf("%d", &y_salary);
 	m_salary = y_salary / 12;
-	printf("ì›”ìˆ˜ë ¹ì•¡(ë‹¨ìœ„: ë§Œì›): %d", m_salary);
+	printf("¿ù¼ö·É¾×(´ÜÀ§: ¸¸¿ø): %d", m_salary);
 	
-	return 0;
+	return 0;*/
 
 
 
-	float radius, area;
-	printf("ì›ì˜ ë°˜ì§€ë¦„ì„ ì…ë ¥í•˜ì‹œì˜¤: ");
+	/*float radius, area;
+	printf("¿øÀÇ ¹İÁö¸§À» ÀÔ·ÂÇÏ½Ã¿À: ");
 	scanf("%f", &radius);
 	area = 3.14 * (radius * radius);
-	printf("\nì›ì˜ ì§€ë¦„: %f", area);
-	return 0;
+	printf("\n¿øÀÇ Áö¸§: %f", area);
+	return 0;*/
 
 
 
-	double rate, usd;
+	/*double rate, usd;
 	int krw;
 
-	printf("í™˜ìœ¨ì„ ì…ë ¥í•˜ì‹œì˜¤: ");
+	printf("È¯À²À» ÀÔ·ÂÇÏ½Ã¿À: ");
 	scanf("%lf", &rate);
 
-	printf("ì›í™” ê¸ˆì•¡ì„ ì…ë ¥í•˜ì‹œì˜¤: ");
+	printf("¿øÈ­ ±İ¾×À» ÀÔ·ÂÇÏ½Ã¿À: ");
 	scanf("%d", &krw);
 	
 	usd = krw / rate;
 
-	printf("ì›í™” %dì›ì€ %lfë‹¬ëŸ¬ì…ë‹ˆë‹¤.\n", krw, usd);
+	printf("¿øÈ­ %d¿øÀº %lf´Ş·¯ÀÔ´Ï´Ù.\n", krw, usd);*/
 
 
 
-	double w, h, area, perimeter;
+	/*double w, h, area, perimeter;
 
-	printf("ì‚¬ê°í˜•ì˜ ë„ˆë¹„ì™€ ë†’ì´ ë¥¼ ì…ë ¥í•˜ì‹œì˜¤: ");
+	printf("»ç°¢ÇüÀÇ ³Êºñ¿Í ³ôÀÌ ¸¦ ÀÔ·ÂÇÏ½Ã¿À: ");
 	scanf("%lf %lf", &w, &h);
 	area = w * h;
 	perimeter = 2 * (w + h);
 	
-	printf("ì‚¬ê°í˜•ì˜ ë„“ì´: %f\nì‚¬ê°í˜•ì˜ ë‘˜ë ˆ: %f\n", area, perimeter);
-	return 0;
+	printf("»ç°¢ÇüÀÇ ³ĞÀÌ: %f\n»ç°¢ÇüÀÇ µÑ·¹: %f\n", area, perimeter);
+	return 0;*/
+
+
+
+
 }

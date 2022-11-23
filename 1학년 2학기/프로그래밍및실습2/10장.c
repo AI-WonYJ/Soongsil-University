@@ -1,6 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 #include <Windows.h>
 
 /*#define SIZE 6
@@ -10,7 +11,7 @@ int main(void) {
 	for (int i = 0; i < 10000; i++)
 		++freq[rand() % 6];
 	printf("======================\n");
-	printf("ë©´\të¹ˆë„\n");
+	printf("¸é\tºóµµ\n");
 	printf("======================\n");
 
 	for (int i = 0; i < SIZE; i++)
@@ -27,7 +28,7 @@ int main(void) {
 //	char check;
 //	int seat;
 //	while (1) {
-//		printf("ì¢Œì„ì„ ì˜ˆì•½í•˜ì‹œê² ìŠµë‹ˆê¹Œ?(y ë˜ëŠ” n): ");
+//		printf("ÁÂ¼®À» ¿¹¾àÇÏ½Ã°Ú½À´Ï±î?(y ¶Ç´Â n): ");
 //		scanf(" %c", &check);
 //		if (check == 'y' || check == 'Y') {
 //			printf("------------------------------\n");
@@ -36,19 +37,19 @@ int main(void) {
 //			for (int i = 0; i < SEATS; i++) {
 //				printf("%d ", seats[i]);
 //			}
-//			printf("\nëª‡ë²ˆì§¸ ì¢Œì„ì„ ì˜ˆì•½í•˜ì‹œê² ìŠµë‹ˆê¹Œ?: ");
+//			printf("\n¸î¹øÂ° ÁÂ¼®À» ¿¹¾àÇÏ½Ã°Ú½À´Ï±î?: ");
 //			scanf("%d", &seat);
 //			if (seats[seat - 1] == 0) {
 //				seats[seat - 1] = 1;
-//				printf("ì˜ˆì•½ë˜ì—ˆìŠµë‹ˆë‹¤.\n");
+//				printf("¿¹¾àµÇ¾ú½À´Ï´Ù.\n");
 //			}
 //			else {
-//				printf("ì´ë¯¸ ì˜ˆì•½ëœ ìë¦¬ì…ë‹ˆë‹¤.\n");
+//				printf("ÀÌ¹Ì ¿¹¾àµÈ ÀÚ¸®ÀÔ´Ï´Ù.\n");
 //			}
 //
 //		}
 //		else if (check == 'n' || check == 'N') {
-//			printf("ì˜ˆì•½ì´ ì¢…ë£Œë˜ì—ˆìŠµë‹ˆë‹¤\n");
+//			printf("¿¹¾àÀÌ Á¾·áµÇ¾ú½À´Ï´Ù\n");
 //			break;
 //		}
 //	}
@@ -57,11 +58,12 @@ int main(void) {
 
 
 
+
 /*#define SIZE 10
 
 int main(void) {
 	int prices[SIZE] = { 0 };
-	int i, minimum;
+	int i, ;
 	printf("---------------------------------------\n");
 	printf("1 2 3 4 5 6 7 8 9 10\n");
 	printf("---------------------------------------\n");
@@ -71,12 +73,12 @@ int main(void) {
 		printf("%.3d ", prices[i]);
 	}
 	printf("\n\n");
-	minimum = prices[0];
+	 = prices[0];
 	for (i = 1; i < SIZE; i++) {
-		if (prices[i] < minimum)
-			minimum = prices[i];
+		if (prices[i] < )
+			 = prices[i];
 	}
-	printf("ìµœì†Œê°’ì€ %dì…ë‹ˆë‹¤.", minimum);
+	printf("ÃÖ¼Ò°ªÀº %dÀÔ´Ï´Ù.", );
 	return 0;
 }*/
 
@@ -101,10 +103,9 @@ int main(void) {
 //		if (prices[i] > maximum)
 //			maximum = prices[i];
 //	}
-//	printf("ìµœì†Œê°’ì€ %dì…ë‹ˆë‹¤.", maximum);
+//	printf("ÃÖ¼Ò°ªÀº %dÀÔ´Ï´Ù.", maximum);
 //	return 0;
 //}
-
 
 
 //#define SIZE 10
@@ -142,17 +143,17 @@ int main(void) {
 //	int count = 0;
 //	int list[SIZE] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 //
-//	printf("íƒìƒ‰í•  ê°’ì„ ì…ë ¥í•˜ì‹œì˜¤: ");
+//	printf("Å½»öÇÒ °ªÀ» ÀÔ·ÂÇÏ½Ã¿À: ");
 //	scanf("%d", &key);
 //
 //	for (i = 0; i < SIZE; i++) {
 //		count++;
 //		if (list[i] == key) {
-//			printf("íƒìƒ‰ ì„±ê³µ ì¸ë±ìŠ¤ = %d\níƒìƒ‰ íšŸìˆ˜: %d\n", i,count);
+//			printf("Å½»ö ¼º°ø ÀÎµ¦½º = %d\nÅ½»ö È½¼ö: %d\n", i,count);
 //		}
 //	}
 //
-//	printf("íƒìƒ‰ ì¢…ë£Œ\n");
+//	printf("Å½»ö Á¾·á\n");
 //	return 0;
 //}
 
@@ -165,9 +166,9 @@ int main(void) {
 //int main(void) {
 //	int key;
 //	int grade[SIZE] = { 2, 6, 11, 13, 18, 20, 22, 27, 29, 30, 34, 38, 41, 42, 45, 47 };
-//	printf("íƒìƒ‰í•  ê°’ì„ ì…ë ¥í•˜ì‹œì˜¤: ");
+//	printf("Å½»öÇÒ °ªÀ» ÀÔ·ÂÇÏ½Ã¿À: ");
 //	scanf("%d", &key);
-//	printf("íƒìƒ‰ ê²°ê³¼ = %d\n", binary_search(grade, SIZE, key));
+//	printf("Å½»ö °á°ú = %d\n", binary_search(grade, SIZE, key));
 //
 //	return 0;
 //}
@@ -202,7 +203,7 @@ int main(void) {
 //
 //	for (int i = 0; i < ROWS; i++) {
 //		double final_scores = a[i][0] * 0.3 + a[i][1] * 0.4 + a[i][2] * 0.2 + a[i][3] * 0.1 - a[i][4];
-//		printf("í•™ìƒ #%iì˜ ìµœì¢…ì„±ì  = %3.2f\n", i + 1, final_scores);
+//		printf("ÇĞ»ı #%iÀÇ ÃÖÁ¾¼ºÀû = %3.2f\n", i + 1, final_scores);
 //	}
 //	return 0;
 //}
@@ -219,7 +220,7 @@ int main(void) {
 //	int total_scale;
 //
 //	total_scale = sum(sales);
-//	printf("ì´ ë§¤ì¶œì€ %dì…ë‹ˆë‹¤.\n", total_scale);
+//	printf("ÃÑ ¸ÅÃâÀº %dÀÔ´Ï´Ù.\n", total_scale);
 //
 //	return 0;
 //}
@@ -235,6 +236,7 @@ int main(void) {
 //	}
 //	return total;
 //}
+
 
 
 
@@ -279,28 +281,29 @@ int main(void) {
 //	{ 1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1 },
 //	{ 1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1 },
 //	{ 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1 } };
-//	printf("ë³€í™˜ì „ ì´ë¯¸ì§€\n");
+//	printf("º¯È¯Àü ÀÌ¹ÌÁö\n");
 //	display(image);
 //	inverse(image);
-//	printf("\n\në³€í™˜í›„ ì´ë¯¸ì§€\n");
+//	printf("\n\nº¯È¯ÈÄ ÀÌ¹ÌÁö\n");
 //	display(image);
 //	return 0;
 //}
+
 
 
 //int main(void)
 //{
 //	char board[3][3];
 //	int x, y, k, i;
-//	// ë³´ë“œë¥¼ ì´ˆê¸°í™”í•œë‹¤. 
+//	// º¸µå¸¦ ÃÊ±âÈ­ÇÑ´Ù. 
 //	for (x = 0; x < 3; x++)
 //		for (y = 0; y < 3; y++) board[x][y] = ' ';
-//	// ì‚¬ìš©ìë¡œë¶€í„° ìœ„ì¹˜ë¥¼ ë°›ì•„ì„œ ë³´ë“œì— í‘œì‹œí•œë‹¤. 
+//	// »ç¿ëÀÚ·ÎºÎÅÍ À§Ä¡¸¦ ¹Ş¾Æ¼­ º¸µå¿¡ Ç¥½ÃÇÑ´Ù. 
 //	for (k = 0; k < 9; k++) {
-//		printf("(x, y) ì¢Œí‘œ: ");
+//		printf("(x, y) ÁÂÇ¥: ");
 //		scanf(" %d %d", &x, &y);
-//		board[x][y] = (k % 2 == 0) ? 'X' : 'O';// í˜„ì¬ì˜ ìˆœë²ˆì— ë”°ë¼ 'X', 'O'ì¤‘ ì„ íƒ
-//		// ë³´ë“œë¥¼ í™”ë©´ì— ê·¸ë¦°ë‹¤. 
+//		board[x][y] = (k % 2 == 0) ? 'X' : 'O';// ÇöÀçÀÇ ¼ø¹ø¿¡ µû¶ó 'X', 'O'Áß ¼±ÅÃ
+//		// º¸µå¸¦ È­¸é¿¡ ±×¸°´Ù. 
 //		for (i = 0; i < 3; i++) {
 //			printf("---|---|---\n");
 //			printf(" %c | %c | %c \n", board[i][0], board[i][1], board[i][2]);

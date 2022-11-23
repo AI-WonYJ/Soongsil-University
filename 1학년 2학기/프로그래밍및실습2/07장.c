@@ -1,37 +1,45 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
+#include <stdlib.h>
+#include <windows.h>
+
+
+#define RATE 0.07// ÀÌÀ²
+#define INVESTMENT 10000000 // ÃÊ±â ÅõÀÚ±İ
+#define YEARS 10 // ÅõÀÚ ±â°£
+
 
 int main(void)
 {
-	int n;
+	/*int n;
 	int i = 1;
-	printf("ì¶œë ¥í•˜ê³  ì‹¶ì€ ë‹¨: ");
+	printf("Ãâ·ÂÇÏ°í ½ÍÀº ´Ü: ");
 	scanf("%d", &n);
 	while (i <= 9) {
 		printf("%d*%d = %d\n", n, i, n * i);
 		i++;
 	}
-	return 0;
+	return 0;*/
 
 
 
-	char life = 1;
+	/*char life = 1;
 	int Method = 0;
 	while (life == 1) {
 		scanf("%d", &Method);
 		if (Method == 0) {
-			printf("ë˜ëŠ”ê±¸ë¡œ í•˜ì.\n");
+			printf("µÇ´Â°É·Î ÇÏÀÚ.\n");
 		}
 		else {
-			printf("ìˆ˜ê³ í–ˆë‹¤. ë‹¤ìŒê±° í•˜ì.\n");
+			printf("¼ö°íÇß´Ù. ´ÙÀ½°Å ÇÏÀÚ.\n");
 		}
 	}
-	return 0;
+	return 0;*/
 
 
-	int i, n, sum;
+	/*int i, n, sum;
 
-	printf("ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤: ");
+	printf("Á¤¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À: ");
 	scanf("%d", &n);
 
 	i = 1;
@@ -41,14 +49,263 @@ int main(void)
 		sum += i;
 		i++;
 	}
-	printf("1ë¶€í„° %dê¹Œì§€ì˜ í•©ì€ %dì…ë‹ˆë‹¤\n", n, sum);
-	return 0;
+	printf("1ºÎÅÍ %d±îÁöÀÇ ÇÕÀº %dÀÔ´Ï´Ù\n", n, sum);
+	return 0;*/
 
-	int n = 1;
+	/*int n = 1;
 	double money = 0.5;
 	while (n <= 30) {
 		money *= 2;
-		printf("%dì¼ë‚  í˜„ì¬ ê¸ˆì•¡ = %lfì›\n", n, money);
+		printf("%dÀÏ³¯ ÇöÀç ±İ¾× = %lf¿ø\n", n, money);
 		n++;
+	}*/
+
+
+
+	/*int sum = 0, n;
+	do {
+		printf("Á¤¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À: ");
+		scanf("%d", &n);
+		sum += n;
+	} while (n != 0);
+	printf("¼ıÀÚµéÀÇ ÇÕ = %d\n", sum);
+	return 0;*/
+
+
+
+	/*int i = 0;
+	do
+	{
+		printf("1---»õ·Î¸¸µé±â\n");
+		printf("2---ÆÄÀÏ¿­±â\n");
+		printf("3---ÆÄÀÏ´İ±â\n");
+		printf("ÇÏ³ª¸¦ ¼±ÅÃÇÏ½Ã¿ä.\n");
+		scanf("%d", &i);
+	} while (i < 1 || i > 3);
+	printf("¼±ÅÃµÈ ¸Ş´º=%d\n", i);
+	
+	return 0;*/
+
+
+
+	/*int answer = 59;
+	int n;
+	int tries = 0;
+	do {
+		printf("Á¤´äÀ» ÃßÃøÇÏ¿© º¸½Ã¿À: ");
+		scanf("%d", &n);
+		if (n < answer) {
+			printf("Á¦½ÃÇÑ Á¡¼ö°¡ ³ô½À´Ï´Ù.\n");
+		}
+		else if (n > answer) {
+			printf("Á¦½ÃÇÑ Á¡¼ö°¡ ³·½À´Ï´Ù.\n");
+		}
+		tries++;
+	} while (n != answer);
+	printf("ÃàÇÏÇÕ´Ï´Ù. ½ÃµµÈ½¼ö = %d\n", tries);*/
+
+
+
+	/*srand(time(NULL));
+	printf("³­¼ö : %d\n", rand());
+	printf("³­¼ö : %d\n", rand());
+	printf("³­¼ö : %d\n", rand());
+	printf("³­¼ö : %d\n", rand());*/
+
+
+
+	/*int answer = rand(0, 100);
+	int n;
+	int tries = 0;
+	do {
+		printf("Á¤´äÀ» ÃßÃøÇÏ¿© º¸½Ã¿À: ");
+		scanf("%d", &n);
+		if (n < answer) {
+			printf("Á¦½ÃÇÑ Á¡¼ö°¡ ³ô½À´Ï´Ù.\n");
+		}
+		else if (n > answer) {
+			printf("Á¦½ÃÇÑ Á¡¼ö°¡ ³·½À´Ï´Ù.\n");
+		}
+		tries++;
+	} while (n != answer);
+	printf("ÃàÇÏÇÕ´Ï´Ù. ½ÃµµÈ½¼ö = %d\n", tries);*/
+
+	/*long fact = 1;
+	int i, n;
+	printf("Á¤¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿ä:");
+	scanf("%d", &n);
+	for (i = n; i >= 1; i--)
+	fact = fact * i;
+	printf("%d!Àº %dÀÔ´Ï´Ù.\n", n, fact);
+	return 0;*/
+
+
+
+	/*int x, y;
+
+	for (y = 0; y < 5; y++) {
+		for (x = 0; x < 10; x++) {
+			printf("*");
+		}
+		printf("\n");
 	}
+	return 0;*/
+
+
+
+	/*int x, y;
+	for (y = 0; y < 5; y++) {
+		for (x = 0; x <= y; x++) {
+			printf("*");
+		}
+		printf("\n");
+	}
+
+	return 0;*/
+
+
+
+	/*int x, y, z;
+	int center = 5;
+	for (y = 0; y < 5; y++) {
+		for (x = 0; x <= center - y; x++) {
+			printf(" ");
+		}
+		for (z = 0; z <= y; z++) {
+			printf("* ");
+		}
+		printf("\n");
+	}
+
+	return 0;*/
+
+
+	/*int i, j;
+	for (i = 0; i < 3; i++) {
+		for (j = 0; j < 3; j++) {
+			printf("%d °öÇÏ±â %dÀº %d\n", i, j, i * j);
+		}
+	}
+
+	return 0;*/
+
+
+
+	/*int a, b, c;
+	for (a = 1; a <= 100; a++) {
+		for (b = 1; b <= 100; b++) {
+			for (c = b; c <= 100; c++) {
+				if ((a * a + b * b) == c * c) {
+					printf("%d %d %d\n", a, b, c);
+				}
+			}
+		}
+	}
+	return 0;*/
+
+
+
+	/*int a, b;
+	for (a = 1; a <= 6; a++) {
+		for (b = 1; b <= 6; b++) {
+			if (a + b == 6) {
+				printf("(%d, %d)\n", a, b);
+			}
+		}
+	}
+	return 0;*/
+
+
+
+	/*int y = 0;
+	int money = 100;
+	while(1) {
+		y++;
+		money += money * 0.3;
+		if (money >= 1000) {
+			break;
+		}
+	}
+	printf("%d³â", y);
+	return 0;*/
+	
+
+
+	/*char letter;
+	while (1) {
+		printf("\n¼Ò¹®ÀÚ¸¦ ÀÔ·ÂÇÏ½Ã¿À: ");
+		scanf("%c", &letter);
+
+		if (letter == 'Q' || letter == 'q')
+			break;
+		if (letter < 'a' || letter > 'z')
+			continue;
+	}
+	letter -= 32;
+	printf("\nº¯È¯µÈ ´ë¹®ÀÚ´Â %cÀÔ´Ï´Ù.\n", letter);
+
+	return 0;*/
+
+
+
+	/*int i;
+	double total = INVESTMENT;
+	printf("=================\n");
+	printf("¿¬µµ ¿ø¸®±İ");
+	printf("=================\n");
+	for (i = 1; i <= YEARS; i++) {
+		total *= (1 + RATE);
+		printf("%2d%10.1f\n", i, total);
+	}
+	return 0;*/
+
+
+	/*int x, y, answer;
+	srand(time(NULL));
+	for (int i = 0; i < 10; i++) {
+		x = rand() % 10;
+		y = rand() % 10;
+		printf("%d + %d = ", x, y);
+		scanf("%d", &answer);
+		if (x + y == answer)
+			printf("¸Â¾Ò½À´Ï´Ù.\n");
+		else
+			printf("Æ²·È½À´Ï´Ù\n");
+	}
+	return 0;*/
+
+
+
+	/*int initial_money = 50;
+	int goal = 250;
+	int i;
+	int wins = 0;
+	for (i = 0; i < 100; i++) {
+		int cash = initial_money;
+		while (cash > 0 && cash < goal) {
+			printf("%d    ", cash);
+			if (((double)rand() / RAND_MAX) < 0.5) cash++;
+			else cash--;
+		}
+		if (cash == goal) wins++;
+	}
+	printf("ÃÊ±â ±İ¾× $%d \n", initial_money);
+	printf("¸ñÇ¥ ±İ¾× $%d \n", goal);
+	printf("100¹ø Áß¿¡¼­ %d¹ø ¼º°ø\n", wins);
+	return 0;*/
+
+
+
+	HDC hdc = GetWindowDC(GetForegroundWindow()); // ±×¸®±â ¼Ó¼º
+	int i;
+	for (i = 0; i < 100; i++) {
+		int x = rand() % 500;
+		int y = rand() % 300;
+		int w = rand() % 100;
+		int h = rand() % 100;
+		Rectangle(hdc, x, y, x + w, y + h);// È­¸é¿¡ »ç°¢ÇüÀ» ±×¸°´Ù. 
+		Sleep(100);
+	}
+	return 0;
+
 }

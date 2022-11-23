@@ -5,70 +5,70 @@
 
 int main(void)
 {
-	int x;
-	printf("ë³€ìˆ˜xì˜ í¬ê¸°: %d\n", sizeof(x));
-	printf("charí˜•ì˜ í¬ê¸°: %d\n", sizeof(char));
-	printf("intí˜•ì˜ í¬ê¸°: %d\n", sizeof(int));
-	printf("shortí˜•ì˜ í¬ê¸°: %d\n", sizeof(short));
-	printf("longí˜•ì˜ í¬ê¸°: %d\n", sizeof(long));
-	printf("floatí˜•ì˜ í¬ê¸°: %d\n", sizeof(float));
-	printf("doubleí˜•ì˜ í¬ê¸°: %d\n", sizeof(double));
-	return 0;
+	/*int x;
+	printf("º¯¼öxÀÇ Å©±â: %d\n", sizeof(x));
+	printf("charÇüÀÇ Å©±â: %d\n", sizeof(char));
+	printf("intÇüÀÇ Å©±â: %d\n", sizeof(int));
+	printf("shortÇüÀÇ Å©±â: %d\n", sizeof(short));
+	printf("longÇüÀÇ Å©±â: %d\n", sizeof(long));
+	printf("floatÇüÀÇ Å©±â: %d\n", sizeof(float));
+	printf("doubleÇüÀÇ Å©±â: %d\n", sizeof(double));
+	return 0;*/
 
 
 
-	short s_money = SHRT_MAX;
+	/*short s_money = SHRT_MAX;
 	unsigned short u_money = USHRT_MAX;
 	s_money += 1;
 	printf("s_money = %d\n", s_money);
 	u_money = u_money + 1;
 	printf("u_money = %d", u_money);
-	return 0;
+	return 0;*/
 
 
 
-	unsigned int a = -2;
+	/*unsigned int a = -2;
 	printf("%d\n", a);
-	printf("%u", a);
+	printf("%u", a);*/
 
 
 
-	char code1 = 'A';
+	/*char code1 = 'A';
 	char code2 = 65;
 	printf("code1 = %c\n", code1);
-	printf("code2 = %c\n", code2);
+	printf("code2 = %c\n", code2);*/
 
 
 
-	char beep = 7;
+	/*char beep = 7;
 	printf("%c", beep);
 	char beep = 7;
-	printf("%c", beep);
+	printf("%c", beep);*/
 
 
 
-	char code = 'A';
+	/*char code = 'A';
 	printf("%d %d %d \n", code, code + 1, code + 2);
-	printf("%c %c %c \n", code, code + 1, code + 2);
+	printf("%c %c %c \n", code, code + 1, code + 2);*/
 
 
 	
-	int x, y, z, sum;
+	/*int x, y, z, sum;
 	printf("3rodml wjdtnfmf dlqfurgktpdy (x, y, z): ");
 	scanf("%d %d %d", &x, &y, &z);
-	sum += x;  // sumì„ ì •ì˜í•´ì£¼ì§€ ì•Šì•„ ì˜¤ë¥˜ê°€ ë°œìƒí•œë‹¤.
+	sum += x;  // sumÀ» Á¤ÀÇÇØÁÖÁö ¾Ê¾Æ ¿À·ù°¡ ¹ß»ıÇÑ´Ù.
 	sum += y;
 	sum += z;
-	printf("3ê°œ ì •ìˆ˜ì˜ í•©ì€ %dì…ë‹ˆë‹¤.", sum);
+	printf("3°³ Á¤¼öÀÇ ÇÕÀº %dÀÔ´Ï´Ù.", sum);*/
 
 
 
-	double dis = 149600000.0;
+	/*double dis = 149600000.0;
 	double l_speed = 300000.0;
 	double time;
 	time = dis / l_speed;
 	time = time / 60.0;
-	printf("ë¹›ì˜ ì†ë„ëŠ” %lfkm/s\n", l_speed);
-	printf("íƒœì–‘ê³¼ ì§€êµ¬ì™€ì˜ ê±°ë¦¬ %lfkm\n", dis);
-	printf("ë„ë‹¬ ì‹œê°„ì€ %lfë¶„", time);
+	printf("ºûÀÇ ¼Óµµ´Â %lfkm/s\n", l_speed);
+	printf("ÅÂ¾ç°ú Áö±¸¿ÍÀÇ °Å¸® %lfkm\n", dis);
+	printf("µµ´Ş ½Ã°£Àº %lfºĞ", time);*/
 }

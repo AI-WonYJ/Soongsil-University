@@ -15,7 +15,7 @@ double get_tax(int income) {
 
 int main(void) {
 	int money;
-	printf("ì†Œë“ì„ ì…ë ¥í•˜ì‹œì˜¤(ë§Œì›): ");
+	printf("¼ÒµæÀ» ÀÔ·ÂÇÏ½Ã¿À(¸¸¿ø): ");
 	scanf("%d", &money);
-	printf("ì†Œë“ì„¸ëŠ” %0.2lf ë§Œì› ì…ë‹ˆë‹¤.", get_tax(money));
+	printf("¼Òµæ¼¼´Â %0.2lf ¸¸¿ø ÀÔ´Ï´Ù.", get_tax(money));
 }

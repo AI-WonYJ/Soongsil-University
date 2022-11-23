@@ -1,6 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 //int main(void) {
 //	char str1[6] = "Seoul";
@@ -18,10 +19,9 @@
 //
 //	while (str[i] != 0)
 //		i++;
-//	printf("ë¬¸ìì—´\"%s\"ì˜ ê¸¸ì´ëŠ” %dì…ë‹ˆë‹¤.\n", str, i);
+//	printf("¹®ÀÚ¿­\"%s\"ÀÇ ±æÀÌ´Â %dÀÔ´Ï´Ù.\n", str, i);
 //	return 0;
 //}
-
 
 
 
@@ -42,9 +42,9 @@
 
 //int main(void) {
 //	char s;
-//	printf("ë¬¸ìë¥¼ ì…ë ¥í•˜ì‹œì˜¤: ");
+//	printf("¹®ÀÚ¸¦ ÀÔ·ÂÇÏ½Ã¿À: ");
 //	scanf("%c", &s);
-//	printf("ì•„ìŠ¤í‚¤ ì½”ë“œê°’=%d", s);
+//	printf("¾Æ½ºÅ° ÄÚµå°ª=%d", s);
 //}
 
 
@@ -52,11 +52,130 @@
 //int main(void) {
 //	char name[100];
 //	char address[100];
-//	printf("ì´ë¦„ì„ ì…ë ¥í•˜ì‹œì˜¤: ");
+//	printf("ÀÌ¸§À» ÀÔ·ÂÇÏ½Ã¿À: ");
 //	gets_s(name, 100);
-//	printf("í˜„ì¬ ê±°ì£¼í•˜ëŠ” ì£¼ì†Œë¥¼ ì…ë ¥í•˜ì‹œì˜¤: ");
+//	printf("ÇöÀç °ÅÁÖÇÏ´Â ÁÖ¼Ò¸¦ ÀÔ·ÂÇÏ½Ã¿À: ");
 //	gets_s(address, 100);
 //	puts(name);
 //	puts(address);
 //	return 0;
 //}
+
+
+
+//int WC(char* s);
+//int main(void) {
+//	char string[100];
+//	printf("´Ü¾î¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ");
+//	gets_s(string, 100);
+//	printf("´Ü¾îÀÇ °³¼ö: %d\n", WC(string));
+//
+//	return 0;
+//}
+//
+//int WC(char* s) {}
+
+
+
+//int main(void) {
+//	char s[] = "100";
+//	int value;
+//
+//	sscanf(s, "%d", &value);
+//	printf("%d\n", value);
+//	value++;
+//	sprintf(s, "%d", value);
+//	printf("%s \n", s);
+//	return 0;
+//}
+
+
+
+//#define ENTRIES 5
+//
+//int main(void) {
+//	int i, index;
+//	char dic[ENTRIES][2][30] = {
+//		{"book", "Ã¥"},
+//		{"boy", "¼Ò³â"},
+//		{"computer", "ÄÄÇ»ÅÍ"},
+//		{"language", "¾ğ¾î"},
+//		{"rain", "ºñ"},
+//	};
+//	char word[30];
+//
+//	printf("´Ü¾î¸¦ ÀÔ·ÂÇÏ½Ã¿À: ");
+//	scanf("%s", word);
+//
+//	index = 0;
+//	for (i = 0; i < ENTRIES; i++) {
+//		if (strcmp(dic[index][0], word) == 0) {
+//			printf("%s: %s\n", word, dic[index][1]);
+//			return 0;
+//		}
+//		index++;
+//	}
+//	printf("»çÀü¿¡¼­ ¹ß°ßµÇÁö ¾Ê¾Ò½À´Ï´Ù.\n");
+//	return 0;
+//}
+
+
+
+//void encrypt(char cipher[], int shift);
+//
+//int main(void) {
+//	char cipher[50];
+//	int shift = 3;
+//
+//	printf("¹®ÀÚ¿­À» ÀÔ·ÂÇÏ½Ã¿À: ");
+//	gets_s(cipher, 50);
+//
+//	encrypt(cipher, shift);
+//	return 0;
+//}
+//
+//void encrypt(char cipher[], int shift) {
+//	int i = 0;
+//	while (cipher[i] != '\0') {
+//		if (cipher[i] >= 'a' && cipher[i] <= 'z') {
+//			cipher[i] += shift;
+//			if (cipher[i] > 'z')
+//				cipher[i] -= 26;
+//		}
+//		i++;
+//	}
+//	printf("¾ÏÈ£È­µÈ ¹®ÀÚ¿­: %s", cipher);
+//}
+
+
+
+int check(char s[], char a[], char ch);
+int main(void) {
+	char solution[100] = "meet at midnight";
+	char answer[100] = "____ __ ________";
+	char ch;
+	while (1) {
+		printf("¹®ÀÚ¿­À» ÀÔ·ÂÇÏ½Ã¿À: %s \n", answer);
+		printf("±ÛÀÚ¸¦ ÃßÃøÇÏ½Ã¿À: ");
+		ch = getchar();
+		if (check(solution, answer, ch) == 1)
+			break;
+		getchar();// ÁÙ¹Ù²Ş ¹®ÀÚ Á¦°Å
+	}
+	return 0;
+}
+
+int check(char s[], char a[], char ch) {
+	int i;
+	for (i = 0; s[i] != NULL; i++) {
+		if (s[i] == ch) {
+			a[i] = ch;
+		}
+	}
+	if (strcmp(s, a) == 0) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}

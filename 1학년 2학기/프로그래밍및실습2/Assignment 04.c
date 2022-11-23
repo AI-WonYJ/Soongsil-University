@@ -1,36 +1,36 @@
-#define _CRT_SECURE_NO_WARNINGS  // scanf ê²½ê³ ë¬¸ ë¬´ì‹œ                                 20221797 ì›ì˜ì§„
-#include <stdio.h>  // stdio í—¤ë”íŒŒì¼ ë¶ˆëŸ¬ì˜¤ê¸°
+#define _CRT_SECURE_NO_WARNINGS  // scanf °æ°í¹® ¹«½Ã                                 20221797 ¿ø¿µÁø
+#include <stdio.h>  // stdio Çì´õÆÄÀÏ ºÒ·¯¿À±â
 
-void disp_menu() {  // ë©”ë‰´ë¥¼ í‘œì‹œí•˜ëŠ” í•¨ìˆ˜
-	printf("1. ë§ì…ˆ\n");
-	printf("2. ëº„ì…ˆ\n");
-	printf("3. ê³±ì…ˆ\n");
-	printf("1. ë‚˜ëˆ—ì…ˆ\n");
+void disp_menu() {  // ¸Ş´º¸¦ Ç¥½ÃÇÏ´Â ÇÔ¼ö
+	printf("1. µ¡¼À\n");
+	printf("2. »¬¼À\n");
+	printf("3. °ö¼À\n");
+	printf("1. ³ª´°¼À\n");
 }
 
-double add(double x, double y) {return x + y; }  // ë§ì…ˆ í•¨ìˆ˜
+double add(double x, double y) {return x + y; }  // µ¡¼À ÇÔ¼ö
 
-double sub(double x, double y) {return x - y; }  // ëº„ì…ˆ í•¨ìˆ˜
+double sub(double x, double y) {return x - y; }  // »¬¼À ÇÔ¼ö
 
-double mul(double x, double y) {return x * y; }  // ê³±ì…ˆ í•¨ìˆ˜
+double mul(double x, double y) {return x * y; }  // °ö¼À ÇÔ¼ö
 
-double div(double x, double y) {return x / y; }  // ë‚˜ëˆ—ì…ˆ í•¨ìˆ˜
+double div(double x, double y) {return x / y; }  // ³ª´°¼À ÇÔ¼ö
 
 int main(void) {
-	int choice;  // ë²ˆí˜¸ ì„ íƒ ì €ì¥ ë³€ìˆ˜
-	double n1 = 0;  // ì²« ë²ˆì§¸ ì‹¤ìˆ˜ ì €ì¥ ë³€ìˆ˜
-	double n2 = 0;  // ë‘ ë²ˆì§¸ ì‹¤ìˆ˜ ì €ì¥ ë³€ìˆ˜
-	disp_menu();  // ë©”ë‰´ í‘œì‹œ í•¨ìˆ˜ ì‹¤í–‰
-	printf("ë²ˆí˜¸ë¥¼ ì„ íƒí•˜ì„¸ìš”:");
-	scanf("%d", &choice);  // ë²ˆí˜¸ ì„ íƒì„ ë°›ì•„ì•„ 'choice' ë³€ìˆ˜ì— ì €ì¥
-	printf("ì‹¤ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤: ");
-	scanf("%lf", &n1);  // ì²« ë²ˆì§¸ ì‹¤ìˆ˜ 'n1' ë³€ìˆ˜ì— ì €ì¥
-	printf("ì‹¤ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤: ");
-	scanf("%lf", &n2);  // ë‘ ë²ˆì§¸ ì‹¤ìˆ˜ 'n2' ë³€ìˆ˜ì— ì €ì¥
-	if (choice == 1) { printf("ì—°ì‚°ê²°ê³¼=%lf\n", add(n1, n2)); }  // 1ë²ˆì„ ì„ íƒ í–ˆì„ ê²½ìš° ë§ì…ˆ í•¨ìˆ˜ ì‹¤í–‰í•˜ê³  ê²°ê³¼ë¥¼ ì¶œë ¥
-	else if (choice == 2) {	printf("ì—°ì‚°ê²°ê³¼=%lf\n", sub(n1, n2)); }  // 2ë²ˆì„ ì„ íƒ í–ˆì„ ê²½ìš° ëº„ì…ˆ í•¨ìˆ˜ ì‹¤í–‰í•˜ê³  ê²°ê³¼ë¥¼ ì¶œë ¥
-	else if (choice == 3) {	printf("ì—°ì‚°ê²°ê³¼=%lf\n", mul(n1, n2)); }  // 3ë²ˆì„ ì„ íƒ í–ˆì„ ê²½ìš° ê³±ì…ˆ í•¨ìˆ˜ ì‹¤í–‰í•˜ê³  ê²°ê³¼ë¥¼ ì¶œë ¥
-	else if (choice == 4) {	printf("ì—°ì‚°ê²°ê³¼=%lf\n", div(n1, n2)); }  // 4ë²ˆì„ ì„ íƒ í–ˆì„ ê²½ìš° ë‚˜ëˆ—ì…ˆ í•¨ìˆ˜ ì‹¤í–‰í•˜ê³  ê²°ê³¼ë¥¼ ì¶œë ¥
+	int choice;  // ¹øÈ£ ¼±ÅÃ ÀúÀå º¯¼ö
+	double n1 = 0;  // Ã¹ ¹øÂ° ½Ç¼ö ÀúÀå º¯¼ö
+	double n2 = 0;  // µÎ ¹øÂ° ½Ç¼ö ÀúÀå º¯¼ö
+	disp_menu();  // ¸Ş´º Ç¥½Ã ÇÔ¼ö ½ÇÇà
+	printf("¹øÈ£¸¦ ¼±ÅÃÇÏ¼¼¿ä:");
+	scanf("%d", &choice);  // ¹øÈ£ ¼±ÅÃÀ» ¹Ş¾Æ¾Æ 'choice' º¯¼ö¿¡ ÀúÀå
+	printf("½Ç¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À: ");
+	scanf("%lf", &n1);  // Ã¹ ¹øÂ° ½Ç¼ö 'n1' º¯¼ö¿¡ ÀúÀå
+	printf("½Ç¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À: ");
+	scanf("%lf", &n2);  // µÎ ¹øÂ° ½Ç¼ö 'n2' º¯¼ö¿¡ ÀúÀå
+	if (choice == 1) { printf("¿¬»ê°á°ú=%lf\n", add(n1, n2)); }  // 1¹øÀ» ¼±ÅÃ ÇßÀ» °æ¿ì µ¡¼À ÇÔ¼ö ½ÇÇàÇÏ°í °á°ú¸¦ Ãâ·Â
+	else if (choice == 2) {	printf("¿¬»ê°á°ú=%lf\n", sub(n1, n2)); }  // 2¹øÀ» ¼±ÅÃ ÇßÀ» °æ¿ì »¬¼À ÇÔ¼ö ½ÇÇàÇÏ°í °á°ú¸¦ Ãâ·Â
+	else if (choice == 3) {	printf("¿¬»ê°á°ú=%lf\n", mul(n1, n2)); }  // 3¹øÀ» ¼±ÅÃ ÇßÀ» °æ¿ì °ö¼À ÇÔ¼ö ½ÇÇàÇÏ°í °á°ú¸¦ Ãâ·Â
+	else if (choice == 4) {	printf("¿¬»ê°á°ú=%lf\n", div(n1, n2)); }  // 4¹øÀ» ¼±ÅÃ ÇßÀ» °æ¿ì ³ª´°¼À ÇÔ¼ö ½ÇÇàÇÏ°í °á°ú¸¦ Ãâ·Â
 
 	return 0;
 }

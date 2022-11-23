@@ -7,9 +7,9 @@
 //	char c = 69;
 //	float f = 12.3;
 //
-//	printf("iì˜ ì£¼ì†Œ: %u\n", &i);
-//	printf("cì˜ ì£¼ì†Œ: %u\n", &c);
-//	printf("fì˜ ì£¼ì†Œ: %u\n", &f);
+//	printf("iÀÇ ÁÖ¼Ò: %u\n", &i);
+//	printf("cÀÇ ÁÖ¼Ò: %u\n", &c);
+//	printf("fÀÇ ÁÖ¼Ò: %u\n", &f);
 //	return 0;
 //}
 
@@ -36,10 +36,10 @@
 //	int i = 3000;
 //	int* p = NULL;
 //	p = &i;
-//	printf("i = %d\n", i);// ë³€ìˆ˜ì˜ ê°’ ì¶œë ¥
-//	printf("&i = %u\n\n", &i);// ë³€ìˆ˜ì˜ ì£¼ì†Œ ì¶œë ¥
-//	printf("p = %u\n", p);// í¬ì¸í„°ì˜ ê°’ ì¶œë ¥
-//	printf("*p = %d\n", *p);// í¬ì¸í„°ë¥¼ í†µí•œ ê°„ì ‘ ì°¸ì¡° ê°’ ì¶œë ¥
+//	printf("i = %d\n", i);// º¯¼öÀÇ °ª Ãâ·Â
+//	printf("&i = %u\n\n", &i);// º¯¼öÀÇ ÁÖ¼Ò Ãâ·Â
+//	printf("p = %u\n", p);// Æ÷ÀÎÅÍÀÇ °ª Ãâ·Â
+//	printf("*p = %d\n", *p);// Æ÷ÀÎÅÍ¸¦ ÅëÇÑ °£Á¢ ÂüÁ¶ °ª Ãâ·Â
 //	return 0;
 //}
 
@@ -109,9 +109,9 @@
 //	double sensorData[3];
 //	getSensorData(sensorData);
 //
-//	printf("ì™¼ìª½ ì„¼ì„œì™€ ì¥ì• ë¬¼ê³¼ì˜ ê±°ë¦¬: %lf\n", sensorData[0]);
-//	printf("ì¤‘ê°„ ì„¼ì„œì™€ ì¥ì• ë¬¼ê³¼ì˜ ê±°ë¦¬: %lf\n", sensorData[1]);
-//	printf("ì˜¤ë¥¸ìª½ ì„¼ì„œì™€ ì¥ì• ë¬¼ê³¼ì˜ ê±°ë¦¬: %lf\n", sensorData[2]);
+//	printf("¿ŞÂÊ ¼¾¼­¿Í Àå¾Ö¹°°úÀÇ °Å¸®: %lf\n", sensorData[0]);
+//	printf("Áß°£ ¼¾¼­¿Í Àå¾Ö¹°°úÀÇ °Å¸®: %lf\n", sensorData[1]);
+//	printf("¿À¸¥ÂÊ ¼¾¼­¿Í Àå¾Ö¹°°úÀÇ °Å¸®: %lf\n", sensorData[2]);
 //}
 
 
@@ -147,7 +147,6 @@
 //
 //	return 0;
 //}
-////scores = 100 * grade / 4.5
 
 
 
@@ -169,5 +168,5 @@
 //
 //void main() {
 //	int A[SIZE] = { 150, 200, 600, 900 };
-//	printf("ì¸ë±ìŠ¤ ë²ˆí˜¸: %d", serach(A, SIZE, 200));
+//	printf("ÀÎµ¦½º ¹øÈ£: %d", serach(A, SIZE, 200));
 //}

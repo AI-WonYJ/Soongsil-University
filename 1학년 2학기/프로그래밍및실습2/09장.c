@@ -6,7 +6,7 @@
 #include <conio.h>
 #include <math.h>
 
-void save(int amount) {
+/*void save(int amount) {
 	static int s = 0;
 
 	if (amount >= 0) {
@@ -21,7 +21,7 @@ void save(int amount) {
 
 int main(void) {
 	printf("==========================\n");
-	printf("ì…ê¸ˆ\tì¶œê¸ˆ\tì”ê³ \n");
+	printf("ÀÔ±İ\tÃâ±İ\tÀÜ°í\n");
 	save(10000);
 	save(50000);
 	save(-10000);
@@ -29,4 +29,4 @@ int main(void) {
 	printf("==========================\n");
 
 	return 0;
-}
+}*/
