@@ -16,18 +16,18 @@ def custom_linear_search(target_list, x):
 def custom_binary_search(target_list, x):
     num_steps = 0
     # YOU ARE ONLY ALLOWED TO MODIFY THIS ZONE - START
-    start, end = 0, len(target_list)
+    first, last = 0, len(target_list)
 
-    while start <= end:
+    while first <= last:
         num_steps += 1
-        half = (start + end) // 2
+        half = (first + last) // 2
         if target_list[half] == x:
             x_index = half
             break
         elif target_list[half] > x:
-            end = half - 1
+            last = half - 1
         else:
-            start = half + 1
+            first = half + 1
     # YOU ARE ONLY ALLOWED TO MODIFY THIS ZONE - END
     return x_index, num_steps
 
