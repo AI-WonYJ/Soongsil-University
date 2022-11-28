@@ -17,7 +17,6 @@ def custom_binary_search(target_list, x):
     num_steps = 0
     # YOU ARE ONLY ALLOWED TO MODIFY THIS ZONE - START
     first, last = 0, len(target_list)
-
     while first <= last:
         num_steps += 1
         half = (first + last) // 2
@@ -28,6 +27,8 @@ def custom_binary_search(target_list, x):
             last = half - 1
         else:
             first = half + 1
+    if first > last:
+        x_index = -1
     # YOU ARE ONLY ALLOWED TO MODIFY THIS ZONE - END
     return x_index, num_steps
 
