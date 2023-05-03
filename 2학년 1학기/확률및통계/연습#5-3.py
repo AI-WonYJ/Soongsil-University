@@ -14,7 +14,7 @@ import matplotlib.pyplot as plt
 
 x = np.linspace(-4, 4, 1000)
 xp_sn = st.norm.cdf(x, 0, 1)
-plt.plot(x, xp_sn, 'b--')
+plt.plot(x, xp_sn, "b--")
 
 v = 1
 xp = st.t.cdf(x, v)
